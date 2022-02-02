@@ -15,7 +15,8 @@ export function startStateFunc() {
     Navigation: skillRandomizer(),
     Shipwrighting: skillRandomizer(),
     Bluff: skillRandomizer(),
-    Intimidation: skillRandomizer()
+    Intimidation: skillRandomizer(),
+    Traits: []
   };
 }
 
@@ -38,5 +39,20 @@ export function changeStateReplaceString(prop) {
       ...state,
       [prop] : value
     });
+  };
+}
+
+export function addTrait(buffedSkill) {
+  return (nerfedSkill) => {
+    return (name) => {
+      return (state) => {
+        return {
+          ...state,
+          Traits : [...state.Traits, name],
+          [buffedSkill] : (state[buffedSkill] + 2),
+          [nerfedSkill] : (state[nerfedSkill] - 1)
+        };
+      };
+    };
   };
 }

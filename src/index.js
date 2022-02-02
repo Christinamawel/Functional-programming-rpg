@@ -3,7 +3,8 @@ import './css/styles.css';
 import * as Character from './businessLogic.js';
 import PirateImg from './assets/images/pirate.jpg';
 
-const currentChar = Character.storeState(Character.startStateFunc());
+let currentChar = Character.storeState(Character.startStateFunc());
+currentChar = Character.storeState(Character.addTrait("Intimidation")("Marksmanship")("Eye patch")(currentChar()));
 updateCharacterElements(currentChar());
 
 function updateCharacterElements(character) {
@@ -16,6 +17,8 @@ function updateCharacterElements(character) {
   $("#shipwrighting-value").text(`${character.Shipwrighting}`);
   $("#bluff-value").text(`${character.Bluff}`);
   $("#intimidation-value").text(`${character.Intimidation}`);
+
+  $("#text-box").append(`<p>${character.Traits[0]}</p>`);
 
   $("#pirate-img").attr("src", PirateImg);
 }

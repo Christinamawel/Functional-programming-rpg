@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: rgb(26, 26, 87); 
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin: 0;
+  color:rgb(21, 21, 122);
+}
+
+#sub-heading {
+  color:rgb(21, 21, 122);
+  font-size: 1.8rem;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 1.5em;
+}
+
+#container {
+  width: 80%;
+  margin: 0 auto;
+  background-color: white;
+  display: flow-root;
+  padding: 1em;
+}
+
+#health-div {
+  background-color: rgb(155, 28, 28);
+  color: white;
+  width: 10em;
+  padding: .5em 1em;
+  border-radius: .5em;
+  position: absolute;
+}
+
+#skills-div {
+  position: absolute;
+  width: 100vw;
+}
+
+#skills-ul-container {
+  margin-left: auto;
+  width: 20em;
+  margin-right: 25em;
+}
+
+#skills-ul {
+  background-color: rgb(34, 34, 148);
+  color: white;
+  padding: 1em 2em;
+  border-radius: 1em;
+}
+
+#pirate-img {
+  margin: 0 auto;
+  display: block;
+}
+
+#text-box {
+  background-color:rgb(224, 224, 255);
+  border: .5em solid rgb(21, 21, 122);
+  border-radius: 1em;
+  padding: 1em;
+  width: 100%;
+  margin: 1em auto;
+  box-sizing: border-box;
+}
