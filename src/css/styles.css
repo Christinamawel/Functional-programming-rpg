@@ -20,7 +20,7 @@ h1 {
 }
 
 #sub-heading {
-  color:rgb(21, 21, 122);
+  color:rgb(26, 26, 87);
   font-size: 1.8rem;
   text-align: center;
   margin-top: 0;
@@ -36,7 +36,7 @@ h1 {
 }
 
 #health-div {
-  background-color: rgb(155, 28, 28);
+  background-color: rgb(156, 26, 26);
   color: white;
   width: 10em;
   padding: .5em 1em;
@@ -52,7 +52,7 @@ h1 {
 #skills-ul-container {
   margin-left: auto;
   width: 20em;
-  margin-right: 25em;
+  margin-right: 26em;
 }
 
 #skills-ul {
@@ -60,6 +60,23 @@ h1 {
   color: white;
   padding: 1em 2em;
   border-radius: 1em;
+}
+
+#skills-ul h2 {
+  font-size: 1.7rem;
+}
+
+#traits-div {
+  background-color:rgb(34, 34, 148);
+  position: absolute;
+  margin-top: 6em;
+  padding: 1em;
+  color: white;
+  border-radius: .5em;
+}
+
+#traits-list li {
+  font-size: 1.2rem;
 }
 
 #pirate-img {
@@ -75,4 +92,24 @@ h1 {
   width: 100%;
   margin: 1em auto;
   box-sizing: border-box;
+}
+
+.choice-btn {
+  font-size: 1.2rem;
+  padding: 1em;
+  display: block;
+  border: none;
+  border-radius: 1em;
+  background-color:rgb(21, 21, 122);
+  color: white;
+  margin-bottom: 1em;
+}
+
+.choice-btn:hover{
+  cursor: pointer;
+  background-color: rgb(12, 12, 65);
+}
+
+#text-box {
+  font-size: 1.2rem;
 }
